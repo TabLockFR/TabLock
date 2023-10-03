@@ -3,4 +3,112 @@ layout: header_base
 title: TabLock
 ---
 
+<style>
+
+.gridFront {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px;
+}
+.squareFront {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+.squareFront a {
+    display: block;
+    height: 100%;
+}
+.squareFront .imageFront {
+    background-image: url('https://www.tablock.fr/imgs/lokamalis-illu.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.squareFront:hover {
+    transform: scale(1.05);
+    opacity: 0.5;
+}
+.squareFront:hover .captionFront {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+.captionFront {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+</style>
+
 <h2>Bienvenue jeune aventurier(e) !</h2>
+
+<section class="gridFront">
+    <div class="squareFront">
+        <a href="https://www.tablock.fr/aventure/lokamalis">
+            <div class="imageFront"></div>
+            <p class="captionFront">Lokamalis</p>
+        </a>
+    </div>
+  <div class="squareFront">
+        <a href="https://www.tablock.fr/aventure/lokamalis">
+            <div class="imageFront"></div>
+            <p class="captionFront">Lokamalis</p>
+        </a>
+    </div>
+  <div class="squareFront">
+        <a href="https://www.tablock.fr/aventure/lokamalis">
+            <div class="imageFront"></div>
+            <p class="captionFront">Lokamalis</p>
+        </a>
+    </div>
+  <div class="squareFront">
+        <a href="https://www.tablock.fr/aventure/lokamalis">
+            <div class="imageFront"></div>
+            <p class="captionFront">Lokamalis</p>
+        </a>
+    </div>
+  <div class="squareFront">
+        <a href="https://www.tablock.fr/aventure/lokamalis">
+            <div class="imageFront"></div>
+            <p class="captionFront">Lokamalis</p>
+        </a>
+    </div>
+  <div class="squareFront">
+        <a href="https://www.tablock.fr/aventure/lokamalis">
+            <div class="imageFront"></div>
+            <p class="captionFront">Lokamalis</p>
+        </a>
+    </div>
+  <div class="squareFront">
+        <a href="https://www.tablock.fr/aventure/lokamalis">
+            <div class="imageFront"></div>
+            <p class="captionFront">Lokamalis</p>
+        </a>
+    </div>
+  <div class="squareFront">
+        <a href="https://www.tablock.fr/aventure/lokamalis">
+            <div class="imageFront"></div>
+            <p class="captionFront">Lokamalis</p>
+        </a>
+    </div>
+  <div class="squareFront">
+        <a href="https://www.tablock.fr/aventure/lokamalis">
+            <div class="imageFront"></div>
+            <p class="captionFront">Lokamalis</p>
+        </a>
+    </div>
+    <!-- Répétez ce bloc 8 fois pour les autres carrés -->
+</section>
