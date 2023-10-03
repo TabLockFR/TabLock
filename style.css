@@ -627,7 +627,7 @@ footer{
 
 .gridFront {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     margin: 100px 20px 0 20px;
 }
@@ -635,7 +635,7 @@ footer{
     position: relative;
     overflow: hidden;
     border-radius: 25px;
-    min-height: 150px;
+    min-height: 300px;
     transition: transform 0.3s, opacity 0.3s;
 }
 .squareFront a {
@@ -651,20 +651,21 @@ footer{
     transition: opacity 0.3s;
 }
 .squareFront:hover {
-    transform: scale(1.05);
     opacity: 0.5;
 }
 .squareFront:hover .captionFront {
     opacity: 1;
-    transform: translateY(-50%);
+    transform: translate(-50%,-50%);
 }
 .captionFront {
     position: absolute;
-    top: 40%;
-    left: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     text-align: center;
     color: white;
     font-weight: 600;
+    font-size: 30px;
     padding: 10px 15px;
     border-radius: 5px;
     opacity: 0;
