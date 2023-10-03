@@ -651,6 +651,7 @@ footer{
     transition: opacity 0.3s;
 }
 .squareFront:hover {
+    transform: scale(1.05);
     opacity: 0.5;
 }
 .squareFront:hover .captionFront {
